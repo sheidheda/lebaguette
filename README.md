@@ -3,7 +3,6 @@
 ## **Overview**
 Le Baguette is a Clarity smart contract designed to enable the minting, management, and transfer of artisan baguette-themed NFTs. Each NFT features unique, randomly generated attributes inspired by French bakery culture. The contract also supports a whitelist mechanism, royalties on secondary sales, and administrative functions.
 
----
 
 ## **Features**
 1. **Minting:**
@@ -30,7 +29,7 @@ Le Baguette is a Clarity smart contract designed to enable the minting, manageme
 6. **Transfer Functionality:**
    - Secure transfer of ownership with royalties paid to the contract owner.
 
----
+
 
 ## **Contract Details**
 
@@ -47,7 +46,7 @@ Each baguette NFT includes:
 - **Gluten-Free:** 10% chance.
 - **Has Seeds:** 50% chance.
 
----
+
 
 ## **Key Functions**
 
@@ -64,7 +63,7 @@ Each baguette NFT includes:
    - Transfer NFT ownership.
    - Enforces royalties on secondary sales.
 
----
+
 
 ### **Read-Only Functions**
 1. **`get-last-token-id`**: Returns the ID of the last minted NFT.
@@ -73,7 +72,6 @@ Each baguette NFT includes:
 4. **`get-token-traits`**: Fetches an NFT's traits by token ID.
 5. **`is-whitelisted`**: Checks if an address is whitelisted.
 
----
 
 ### **Admin Functions**
 1. **`set-mint-price`**: Update the public mint price.
@@ -85,7 +83,7 @@ Each baguette NFT includes:
 7. **`set-royalty-percent`**: Adjust the royalty percentage.
 8. **`withdraw-funds`**: Withdraw STX funds from the contract.
 
----
+
 
 ## **Constants**
 - **`contract-owner`**: The address that deployed the contract.
@@ -99,25 +97,24 @@ Each baguette NFT includes:
   - `err-not-revealed` (107): Metadata has not been revealed.
   - `err-invalid-percentage` (108): Invalid royalty percentage.
 
----
+
 
 ## **Minting Prices**
 - **Public Mint:** 0.5 STX.
 - **Whitelist Mint:** 0.25 STX.
 - **Max Supply:** 1,000 NFTs.
 
----
+
 
 ## **Royalty System**
 On secondary transfers, 5% of the transaction is sent to the contract owner.
 
----
+
 
 ## **Metadata**
 - **Base URI:** `https://le-baguette-nft.com/metadata/`
 - Metadata can be revealed or hidden by the admin.
 
----
 
 ## **Getting Started**
 
@@ -136,14 +133,13 @@ On secondary transfers, 5% of the transaction is sent to the contract owner.
 5. **Manage Whitelist:**
    - Admin can add or remove users from the whitelist as needed.
 
----
+
 
 ## **Future Enhancements**
 - Multi-signature wallet support.
 - Integration with decentralized marketplaces.
 - Enhanced randomization for traits.
 
----
 
 ## **License**
 This contract is open-source under the MIT License. Feel free to fork and adapt it for your own projects.
